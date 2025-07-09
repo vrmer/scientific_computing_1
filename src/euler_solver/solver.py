@@ -8,8 +8,6 @@ from .utils import save_arrays
 from .parameters import Parameters
 from .equations import equation_x, equation_y, equation_z
 
-# TODO: write tests
-
 
 def solver(
     params: Parameters,

@@ -10,7 +10,7 @@ def equation_x(
     sigma: int|float,
     t_delta: int|float
     ):
-    """
+    r"""
     Euler approximation of the $x$ value at time step $t$.
     
     Parameters:
@@ -35,7 +35,7 @@ def equation_y(
     rho: int|float,
     t_delta: int|float
     ):
-    """
+    r"""
     Euler approximation of the $y$ value at time step $t$.
     
     Parameters:
@@ -61,7 +61,7 @@ def equation_z(
     beta: int|float,
     t_delta: int|float
     ):
-    """
+    r"""
     Euler approximation of the $y$ value at time step $t$.
     
     Parameters:
