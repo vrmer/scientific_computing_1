@@ -1,0 +1,9 @@
+x = 0
+y = 1
+z = 1.05
+sigma = 14
+beta = 4.333
+rho = 28
+
+position_dir = "outputs/case_5"
+figures_dir = "figures/case_5"
