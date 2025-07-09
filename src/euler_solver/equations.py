@@ -2,7 +2,6 @@
 Equations of the Euler ODE solver.
 """
 
-# TODO: write tests
 
 def equation_x(
     x: int|float,

@@ -39,9 +39,19 @@ def load_arrays(target_path: str):
 
 
 def euclidean_distances(array_1, array_2):
-    """
-    # TODO: docstring
-    help from ChatGPT
+    r"""
+    Given two arrays expressing positions of a point in two different dimensions,
+    it calculates the Euclidean distance from the position of the point from 
+    time step $n$ to time step $n+1$.
+    
+    Parameters:
+        array_1: np.ndarray
+        array_2: np.ndarray
+        
+    Output:
+        distances: np.ndarray
+    
+    The function was co-written with ChatGPT.
     """
     assert len(array_1) == len(array_2), "Input arrays have to be the same length"
     
@@ -111,7 +121,20 @@ def colored_line_between_pts(x, y, c, ax, **lc_kwargs):
 
 # from ChatGPT
 def filter_to_dataclass(dataclass_type, data: dict):
-    # TODO: docstring
+    """
+    Given a dataclass and a dictionary with config parameters,
+    it fills in the required parameters of the dataclass with 
+    the ones provided through the config file.
+    
+    Parameters:
+        dataclass_type: a dataclass
+        data: parameters from a config file (dict)
+        
+    Output:
+        an initialised dataclass of the type 'dataclass_type'
+        
+    The function was co-written with ChatGPT.
+    """
     valid_keys = {f.name for f in fields(dataclass_type)}
     filtered_data = {k: v for k, v in data.items() if k in valid_keys}
     return dataclass_type(**filtered_data)
