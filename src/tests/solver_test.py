@@ -13,6 +13,8 @@ params = Parameters(
     N=10
 )
 
+result_tuple = solver(params)
+
 
 class TestEulerSolver:
     
@@ -22,7 +24,6 @@ class TestEulerSolver:
         
         Inspiration from ChatGPT.
         """
-        result_tuple = solver(params)
         assert all(isinstance(result, np.ndarray) for result in result_tuple)
         
     def test_solver_return_shape(self):
@@ -31,5 +32,4 @@ class TestEulerSolver:
         
         Inspiration from ChatGPT.
         """
-        result_tuple = solver(params)
         assert all(result.shape[0] == params.N for result in result_tuple)
