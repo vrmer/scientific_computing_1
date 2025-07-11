@@ -48,7 +48,7 @@ def equation_y(
         value of $y_{t}$
         
     Formula:
-        $y[n+1] \cong \t_{\delta} (x (\rho - z) - y)$
+        $y[n+1] \cong t_{\delta} (x (\rho - z) - y)$
     """
     return y + t_delta * (x * (rho - z) - y)
 
@@ -74,6 +74,6 @@ def equation_z(
         value of $z_{t}$
         
     Formula:
-        $z + \t_delta (xy - \beta z)$
+        $z[n+1] \cong z + t_{\delta} (xy - \beta z)$
     """
     return z + t_delta * (x * y - beta * z)
