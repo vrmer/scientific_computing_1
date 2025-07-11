@@ -119,6 +119,12 @@ This subfolder is also a package that can be installed following the instruction
 
 Files and directories to be ignored by the GitHub repository.
 
+### `chatgpt.py`
+
+Programming solution provided by ChatGPT responding to the following prompt:
+
+> Given parameters x, y, z and sigma, beta, and rho, suggest a full working solution in Python for using Euler's method for solving the ODE of a Lorenz attractor.
+
 ### `environment.yaml`
 
 YAML file to initialise the conda environment from, for installation, see the section [Installation](#installation).
